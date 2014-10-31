@@ -20,8 +20,8 @@ function CheckArgs() {
 }
 
 function getClassfinderHtml() {
-    $dummy_vars = ['sel_subj', 'sel_subj', 'sel_gur', 'sel_gur', 'sel_day', 'sel_open'];
-    $req_vars = ['sel_crn' => '',
+    $dummy_vars = array('sel_subj', 'sel_subj', 'sel_gur', 'sel_gur', 'sel_day', 'sel_open');
+    $req_vars = array('sel_crn' => '',
                      'term' => 201440,
                      'sel_gur' => 'All',
                      'sel_subj' => 'All',
@@ -31,7 +31,7 @@ function getClassfinderHtml() {
                      'begin_mi' => 'A',
                      'end_hh' => 0,
                      'end_mi' => 'A',
-                     'sel_cdts' => '%25'];
+                     'sel_cdts' => '%25');
 
     if (preg_match('/20[0-9]{2}[1-4]0/', $_GET['term']) == 1) {
         $req_vars['term'] = $_GET['term'];

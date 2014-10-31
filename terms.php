@@ -1,8 +1,6 @@
 <?php
-$docRoot = $_SERVER['DOCUMENT_ROOT'] . "classfinder_api";
-
-include_once("$docRoot/include/functions.inc");
-include_once("simple_html_dom.php");
+include_once("./functions.inc");
+include_once("./simple_html_dom.php");
 
 $html = getClassfinderMenu();
 $termDom = $html->find('select[name=term] > option[!selected]');
