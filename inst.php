@@ -1,5 +1,5 @@
 <?php
-include_once("./include/functions.inc");
+include_once("./functions.inc");
 include_once("./simple_html_dom.php");
 
 $html = getClassfinderMenu();
